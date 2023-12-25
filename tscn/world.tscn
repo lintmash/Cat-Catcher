@@ -1,0 +1,26 @@
+[gd_scene load_steps=7 format=3 uid="uid://bog1nqitvdw10"]
+
+[ext_resource type="PackedScene" uid="uid://cob7l0qfurucr" path="res://Player/player.tscn" id="1_0eiij"]
+[ext_resource type="Script" path="res://scripts/world.gd" id="1_vjrx5"]
+[ext_resource type="PackedScene" uid="uid://b1dl0rifocnmr" path="res://tscn/floor.tscn" id="2_pjrrb"]
+[ext_resource type="PackedScene" uid="uid://doayr8lp787fi" path="res://Player/pet_a.tscn" id="3_3nm48"]
+[ext_resource type="PackedScene" uid="uid://mxilbgte0syl" path="res://tscn/parallax_background.tscn" id="3_sh0vl"]
+[ext_resource type="PackedScene" uid="uid://bfkpnxk0vbvwn" path="res://tscn/hud.tscn" id="6_22k2o"]
+
+[node name="world" type="Node2D"]
+script = ExtResource("1_vjrx5")
+
+[node name="player" parent="." instance=ExtResource("1_0eiij")]
+position = Vector2(455, 435)
+
+[node name="cat_a" parent="player" instance=ExtResource("3_3nm48")]
+position = Vector2(-26.5, 22.5)
+
+[node name="floor" parent="." instance=ExtResource("2_pjrrb")]
+
+[node name="ParallaxBackground" parent="." instance=ExtResource("3_sh0vl")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576.25, 327)
+
+[node name="HUD" parent="." instance=ExtResource("6_22k2o")]
