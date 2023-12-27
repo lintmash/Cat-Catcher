@@ -8,17 +8,25 @@ This project holds significant personal significance as it marks my initial fora
 ## What the Goal is :
 CAT-Catcher, formerly Blade Caster, is a side-scrolling game where the player avoids obstacles and catches coins. With these coins, they can purchase cats that possess unique traits to help them achieve a higher score.
 
-## Things to do:
+## Things to do:~
 - ~~Start~~
 - ~~Add a character~~
-- Add Cat
-- Add floor
-- Add Game System
-- Menu
+- ~~Add Cats~~
+- ~~Add floor~~
+- ~~Add Game System~~
+- Add music
+- Add threats 
 - Top Score
 - Finish
 
 
 # What it looks like:
   
-![Screenshot from 2023-12-25 21-44-51](https://github.com/lintmash/Cat-Catcher/assets/148910820/0d15b06e-ceda-4a29-91c4-0541b8d20a18)
+![Screenshot from 2023-12-27 17-50-14](https://github.com/lintmash/Cat-Catcher/assets/148910820/9fbfb721-f880-4166-8398-957e21ece571)
+
+
+# Store
+![Screenshot from 2023-12-27 17-49-22](https://github.com/lintmash/Cat-Catcher/assets/148910820/35bdb92f-55dd-4aea-8dd9-f0a6c8ca33e7)
+
+![Screenshot from 2023-12-27 17-49-32](https://github.com/lintmash/Cat-Catcher/assets/148910820/dca034df-bf20-4462-ad15-927a863f814c)
+

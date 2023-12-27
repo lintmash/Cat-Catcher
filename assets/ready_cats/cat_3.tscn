@@ -1,0 +1,49 @@
+[gd_scene load_steps=5 format=3 uid="uid://dphindlx8w41b"]
+
+[ext_resource type="Texture2D" uid="uid://beixx4ognlb13" path="res://assets/Entities/Pet Cats Pack/Cat-3/Cat-3-Idle.png" id="1_8lguj"]
+
+[sub_resource type="Animation" id="Animation_ns0rn"]
+resource_name = "idle"
+length = 1.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 0, 1, 2, 3, 4, 5, 6]
+}
+
+[sub_resource type="Animation" id="Animation_xe81d"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_b4xdw"]
+_data = {
+"RESET": SubResource("Animation_xe81d"),
+"idle": SubResource("Animation_ns0rn")
+}
+
+[node name="cat_3" type="Sprite2D"]
+texture = ExtResource("1_8lguj")
+hframes = 10
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_b4xdw")
+}

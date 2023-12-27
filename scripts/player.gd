@@ -7,6 +7,8 @@ extends CharacterBody2D
 @onready var collisionshape = $CollisionShape2D
 var isAlive:bool =true
 var gravity = 4300
+var collected_coins =0
+
 
 
 func _physics_process(delta):
@@ -18,10 +20,15 @@ func _physics_process(delta):
 			playerState.play("jump")
 			velocity.y = jumpHeight
 	else:
-		playerState.play("run")			
+		playerState.play("run")
 	
 		
 
 		
 	move_and_slide()
+
+
+
+
+
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://cob7l0qfurucr"]
+[gd_scene load_steps=35 format=3 uid="uid://cob7l0qfurucr"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_jgal1"]
 [ext_resource type="Texture2D" uid="uid://dadueo61foiya" path="res://assets/Steven01/png sheet/normal.png" id="2_nlkia"]
@@ -237,6 +237,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_025do"]
 size = Vector2(21, 44)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dbjkr"]
+size = Vector2(32, 47)
+
 [node name="player" type="CharacterBody2D"]
 scale = Vector2(4, 4)
 script = ExtResource("1_jgal1")
@@ -249,3 +252,9 @@ frame_progress = 0.662787
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, 8)
 shape = SubResource("RectangleShape2D_025do")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-1.25, 6.25)
+shape = SubResource("RectangleShape2D_dbjkr")
